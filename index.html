@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
+    <title>Dr. Lucile Cangemi - Personal Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,12 +17,18 @@
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
         }
         a {
             color: #3498db;
@@ -31,59 +37,142 @@
         a:hover {
             text-decoration: underline;
         }
+        /* New styles for lists */
+        ul.publications, ul.talks {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul.publications li, ul.talks li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        /* Add a small bullet manually if desired, or keep clean */
+        ul.publications li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .date {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .event {
+            font-style: italic;
+            color: #666;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         
-        <div class="header-wrapper" style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-        
-        <!-- Profile Image -->
-        <img src="profilepic.jpg" alt="Profile Picture of Lucile Cangemi" style="width: 100px; object-fit: cover; border-radius: 50%;">
-        
-        <!-- Heading -->
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-        <h1 style="margin: 0; font-size: 24px;">Dr. Lucile Cangemi</h1>
-        <p style="margin: 5px 0 0 0; color: #555;">Hello! This webpage is underconstruction.</p>
+        <div class="header-wrapper" style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+            <!-- Profile Image: Changed to soft rectangle as discussed previously, adjust if circle preferred -->
+            <img src="profilepic.jpg" alt="Profile Picture of Dr. Lucile Cangemi" style="width: 120px; border-radius: 15px; object-fit: cover;">
+            
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="margin: 0; font-size: 28px;">Dr. Lucile Cangemi</h1>
+                <p style="margin: 5px 0 0 0; color: #555; font-size: 1.1em;">Flora Phillip Fellow in Mathematical Physics<br>University of Edinburgh</p>
+                <p style="margin: 5px 0 0 0; color: #777; font-style: italic;">This webpage is under construction.</p>
+            </div>
         </div>
-    
-    </div>
 
-        
         <h2>About Me</h2>
-        <p>Amoung other things, I am a Flora Phillip Fellow at the University of Edinburgh in Mathematical Physics.</p>
+        <p>Among other things, I am a Flora Phillip Fellow at the University of Edinburgh in Mathematical Physics.</p>
 
         <h2>Papers</h2>
-        <p> "Five-dimensional Geometry from Spinning Amplitudes" with Iustin Surubaru</p>
-        <p> "Kerr worldline-QFT action from Compton amplitude to infinite spin orders" with Maor Ben-Shahar and Henrik Johansson</p>
-        <p> "Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton" with Lara Bohnenblust, Henrik Johansson and Paolo Pichini</p>
-        <p> "Compton Amplitude for Rotating Black Hole from QFT" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</p>
-        <p> "From higher-spin gauge interactions to Compton amplitudes for root-Kerr" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</p>
-        <p> "Kerr Black Holes From Massive Higher-Spin Gauge Symmetry" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</p>
-        <p> "Classical limit of higher-spin string amplitudes" with Paolo Pichini</p>
+        <ul class="publications">
+            <li>"Five-dimensional Geometry from Spinning Amplitudes" with Iustin Surubaru</li>
+            <li>"Kerr worldline-QFT action from Compton amplitude to infinite spin orders" with Maor Ben-Shahar and Henrik Johansson</li>
+            <li>"Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton" with Lara Bohnenblust, Henrik Johansson and Paolo Pichini</li>
+            <li>"Compton Amplitude for Rotating Black Hole from QFT" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</li>
+            <li>"From higher-spin gauge interactions to Compton amplitudes for root-Kerr" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</li>
+            <li>"Kerr Black Holes From Massive Higher-Spin Gauge Symmetry" with Marco Chiodaroli, Henrik Johansson, Alexander Ochirov, Paolo Pichini and Evgney Skvortsov</li>
+            <li>"Classical limit of higher-spin string amplitudes" with Paolo Pichini</li>
+        </ul>
 
         <h2>Talks</h2>
-        <p>24th September 2026 - GRAMPI Seminar, University of Edinburgh (local) - "All-orders Graviational Compton Amplitudes" </p>
-        <p>11th August 2026 - Group Seminar, Uppsala Universitet - "Resummations of Gravitational Compton in N=8" </p>
-        <p>18th June 2026 - Conference Talk at Theoretical Developments in Gravitational Wave Physics, Yukawa Institute for Theoretical Physics - "Kerr Geometry from Worldlines, Higher-Spin QFT, and Scattering Amplitudes" </p>
-        <p>27th April 2026 - Seminar for GRAMPA, Online  - "Five-dimensional geometry from amplitudes" </p>
-        <p>11th November 2025 - Workshop Talk at Loop-the-Loop, Online - "Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton" </p>
-        <p>7th November 2024 - Seminar for Amplitudes Group, University of Edinburgh (local) - "Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton" </p>
-        <p>22nd July 2024 - Group Seminar, Shanghai Tech  - "From Quantum to Classical Scattering of Kerr Black Holes" </p>
-        <p>13th June 2024 - Conference Talk at Amplitudes, IAS Princeton  - "From Quantum to Classical Scattering of Kerr Black Holes" </p>
-        <p>22nd January 2024 - Conference Talk at GRAMPA, ICMS Edinburgh  - "General spin Compton amplitudes for Kerr black holes" </p>
-        <p>14th December 2023 - Conference Talk at QCD Meets Gravity, CERN  - "Generating Kerr Amplitudes from Higher-Spin Theory" </p>
-        <p> 4th October 2023 - Seminar for Partical Phyicis Theory, University of Edinburgh  - "Kerr Amplitudes from Higher-Spin Theory" </p>
-        <p> 25th June 2023 - Conference Talk at From Amplitudes to Gravitational Waves, Nordita  - "Higher-spin Compton amplitudes and Kerr" </p>
+        <ul class="talks">
+            <li>
+                <span class="date">24th September 2026</span>
+                GRAMPI Seminar, University of Edinburgh (local)<br>
+                <span class="event">"All-orders Gravitational Compton Amplitudes"</span>
+            </li>
+            <li>
+                <span class="date">11th August 2026</span>
+                Group Seminar, Uppsala Universitet<br>
+                <span class="event">"Resummations of Gravitational Compton in N=8"</span>
+            </li>
+            <li>
+                <span class="date">18th June 2026</span>
+                Conference Talk at Theoretical Developments in Gravitational Wave Physics, Yukawa Institute for Theoretical Physics<br>
+                <span class="event">"Kerr Geometry from Worldlines, Higher-Spin QFT, and Scattering Amplitudes"</span>
+            </li>
+            <li>
+                <span class="date">27th April 2026</span>
+                Seminar for GRAMPA, Online<br>
+                <span class="event">"Five-dimensional geometry from amplitudes"</span>
+            </li>
+            <li>
+                <span class="date">11th November 2025</span>
+                Workshop Talk at Loop-the-Loop, Online<br>
+                <span class="event">"Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton"</span>
+            </li>
+            <li>
+                <span class="date">7th November 2024</span>
+                Seminar for Amplitudes Group, University of Edinburgh (local)<br>
+                <span class="event">"Binary Kerr black-hole scattering at 2PM from quantum higher-spin Compton"</span>
+            </li>
+            <li>
+                <span class="date">22nd July 2024</span>
+                Group Seminar, Shanghai Tech<br>
+                <span class="event">"From Quantum to Classical Scattering of Kerr Black Holes"</span>
+            </li>
+            <li>
+                <span class="date">13th June 2024</span>
+                Conference Talk at Amplitudes, IAS Princeton<br>
+                <span class="event">"From Quantum to Classical Scattering of Kerr Black Holes"</span>
+            </li>
+            <li>
+                <span class="date">22nd January 2024</span>
+                Conference Talk at GRAMPA, ICMS Edinburgh<br>
+                <span class="event">"General spin Compton amplitudes for Kerr black holes"</span>
+            </li>
+            <li>
+                <span class="date">14th December 2023</span>
+                Conference Talk at QCD Meets Gravity, CERN<br>
+                <span class="event">"Generating Kerr Amplitudes from Higher-Spin Theory"</span>
+            </li>
+            <li>
+                <span class="date">4th October 2023</span>
+                Seminar for Particle Physics Theory, University of Edinburgh<br>
+                <span class="event">"Kerr Amplitudes from Higher-Spin Theory"</span>
+            </li>
+            <li>
+                <span class="date">25th June 2023</span>
+                Conference Talk at From Amplitudes to Gravitational Waves, Nordita<br>
+                <span class="event">"Higher-spin Compton amplitudes and Kerr"</span>
+            </li>
+        </ul>
 
-
-        
         <h2>Organiser Roles</h2>
-        <p>Co-organiser of the Edinburgh Mathematical Mathematical Group (EMPG) biweekly seminars - ongoing since June 2025 </p>
-        <p>Co-organised the two-week workshop: Amplitudes, Strong-Field Gravity and Resummation workshop - April 2026 </p>
-
-
+        <ul class="publications">
+            <li>Co-organiser of the Edinburgh Mathematical Physics Group (EMPG) biweekly seminars - ongoing since June 2025</li>
+            <li>Co-organised the two-week workshop: Amplitudes, Strong-Field Gravity and Resummation workshop - April 2026</li>
+        </ul>
 
         <h2>Links</h2>
         <ul>
@@ -91,7 +180,7 @@
         </ul>
 
         <footer>
-            <p>&copy; 2026 Lucile Cangemi</p>
+            <p>&copy; 2026 Dr. Lucile Cangemi</p>
         </footer>
     </div>
 
